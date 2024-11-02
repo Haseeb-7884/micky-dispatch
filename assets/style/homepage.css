@@ -476,7 +476,6 @@
 
 .contact_form_subcontainer_content{
     height: 67vh;
-    /* background-color: orange; */
     width: 100%;
     margin-top: 15px;
     display: flex;
@@ -588,11 +587,12 @@
 /* wattsapp icon starts here */
 .whatsapp-icon {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 30px;
     width: 50px;
     height: 50px;
     z-index: 1000;
+    display: inline-block;
 }
 
 .whatsapp-icon img {
@@ -600,4 +600,62 @@
     height: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(37, 211, 102, 0.5); /* WhatsApp green color with opacity */
+    transform: translate(-50%, -50%);
+    animation: wave-animation 2s infinite;
+    opacity: 0;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+/* Faqs section coding here */
+.faqs_section{
+    height: 80vh;
+    /* background-color: orange; */
+    margin-bottom: 40px;
+    border-bottom: 1px solid grey;
+}
+
+.faqs_subsection{
+    height: 100%;
+    width: 94%;
+    margin: 0 auto;
+    /* background-color: purple; */
+}
+
+.subcontainer_content{
+    margin-top: 20px;
+    height: 60vh;
+    /* background-color: cyan; */
+}
+.faq_section{
+    height: 70px;
+    background-color: white;
 }
