@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.mobile_responsiveness {
+    display: none;
+}
+
+/* Styles for very small mobile devices */
+@media (max-width: 320px){
+    
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    /* header style */
+    .top_navbar {
+        background-color: purple;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 120% !important;
+        height: 11vh;
+        overflow: hidden;
+    }
+    .bottom_navbar{
+        display: none;
+    }
+    .mobile_responsiveness{
+        display: block;
+        width: 100%;
+        /* background-color: orange; */
+        width: 120% !important;
+        overflow: hidden;
+        height: 15vh;
+    }
+    .mobile_responsiveness > section {
+        display: flex;
+        justify-content: center;
+        align-items: space-around;
+        height: 100%;
+        padding: 0px 10px 0px 10px;
+        gap: 70px;
+    }
+
+    .mobile_responsiveness > section > div{
+        padding-top: 10px;
+        width: 70%;
+        height: 70%;    
+    }
+
+    .mobile_responsiveness > section > div > img{
+        width: 40%;
+        height: 100%;
+    }
+
+    .mobile_responsiveness > section > section{
+        margin-top: 25px;
+        width: 20%;
+        height: 50%;
+        /* background-color: purple; */
+    }
+    .mobile_responsiveness > section > section >i{
+        font-size: 30px;
+    }
+
+    .mobile_responsiveness_bottom_navbar {
+        top: 25%;
+        position: absolute;
+        height: 70vh;
+        width: 250px;
+        right: -20%;
+        /* background-color: #007cd6; */
+        background-color: white;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        z-index: 9999;
+        padding: 10px;
+    }
+    .mobile_responsiveness_bottom_navbar.active {
+        visibility: visible;
+    }
+
+    .mobile_responsiveness_bottom_navbar > a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        flex: 1;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+        align-items: center;
+        border-bottom: 1px solid #007cd6;
+    }
+
+    .mobile_responsiveness_bottom_navbar > a:nth-last-child(1){
+        border-bottom: none;
+    }
+
+    /* Style for the menu links */
+.menu-item {
+    position: relative;
+    display: inline-block;
+    color: #333; /* Set the text color */
+    text-decoration: none;
+    padding-left: 20px; /* Space for the arrow icon */
+    transition: color 0.3s ease;
+}
+
+/* Style for the Font Awesome icon */
+.menu-item i {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transform: translateX(-10px); /* Position the icon off-screen to the left */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for the icon */
+}
+
+/* On hover, reveal and slide in the icon */
+.menu-item:hover {
+    color: #555; /* Optional: Change link color on hover */
+}
+
+.menu-item:hover i {
+    opacity: 1;
+    transform: translateX(0); /* Slide the icon into place */
+}
+
+
+
+
+  }
+  
+
+
+/* Styles for small mobile devices like iPhone SE */
+  /* @media (max-width: 375px) {
+    
+  } */
+  
+  /* Styles for larger small mobile devices */
+  /* @media (max-width: 480px) {
+    
+  } */
+  
+  /* Styles for medium mobile devices, like tablets in portrait mode */
+  /* @media (max-width: 768px) {
+    
+  }  */
+  
+  

@@ -19,6 +19,7 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/style/homepage.css">
+    <link rel="stylesheet" href="assets/style/homepage_responsive.css">
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 
     <title>Home - Mikey Dispatch</title>
@@ -36,6 +37,8 @@
             <i class="fa-solid fa-envelope"></i> dispatchcentralhub@gmail.com
         </div>
     </div>
+
+
     <div class="bottom_navbar">
         <div class="bottom_navbar_right">
             <img src="assets/images/logo.png" alt="">
@@ -55,6 +58,29 @@
             <a href="" class="btn">+92 305 111 9563</a>
         </div>
     </div>
+
+    <!-- Navbar Ends -->
+
+    <!-- Mobile responsiveness bottom_navbar starts -->
+    <div class="mobile_responsiveness">
+        <section>
+            <div>
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <section>
+                <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+            </section>
+        </section>
+        <div class="mobile_responsiveness_bottom_navbar">
+            <a target="_blank" class="menu-item" href="pages/about.html">lala <i class="fa-solid fa-arrow-left"></i> </a>
+            <a target="_blank" href="pages/about.html">About</a>
+            <a target="_blank" href="pages/contact.html">Contact</a>
+            <a target="_blank" href="pages/services.html">Services</a>
+            <a target="_blank" href="pages/additional_pages/start.html">How to Start</a>
+            <a target="_blank" href="pages/faqs.html">FAQs</a>
+        </div>
+    </div>
+    <!-- Mobile responsiveness bottom_navbar ends -->
 
     <!-- Hero section Starts -->
     <div class="hero_section">
@@ -432,6 +458,13 @@
     </div>
     <!-- footer section ends here  -->
 
+    <script>
+        document.getElementById('hamburger-icon').addEventListener('click', function () {
+            const navBar = document.querySelector('.mobile_responsiveness_bottom_navbar');
+            navBar.classList.toggle('active');
+        });
+
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
