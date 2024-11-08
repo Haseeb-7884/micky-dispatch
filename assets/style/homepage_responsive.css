@@ -12,69 +12,86 @@
 }
 
 /* Styles for very small mobile devices */
-@media (max-width: 768px){
-    
-    body{
+@media (max-width: 768px) {
+
+    body {
         padding: 0px;
         margin: 0px;
+        overflow-x: hidden;
     }
+
+    /* Hero section coding starts */
+    .hero_section {
+        height: 45vh;
+    }
+
     /* header style */
     .top_navbar {
         background-color: purple;
         display: flex;
         flex-direction: column;
         gap: 5px;
-        width: 120% !important;
+        width: 100% !important;
         height: 11vh;
         overflow: hidden;
     }
-    .bottom_navbar{
+
+    .bottom_navbar {
         display: none;
     }
-    .mobile_responsiveness{
+
+    .mobile_responsiveness {
         display: block;
         width: 100%;
         /* background-color: orange; */
         width: 120% !important;
         overflow: hidden;
-        height: 15vh;
+        height: 12vh;
     }
-    .mobile_responsiveness > section {
+
+    .mobile_responsiveness>section {
         display: flex;
         justify-content: center;
-        align-items: space-around;
+        /* align-items: space-around !important; */
         height: 100%;
-        padding: 0px 50px 0px 10px;
-        gap: 70px;
+        padding: 0px 10px 0px 10px;
+        gap: 40px;
     }
 
-    .mobile_responsiveness > section > div{
-        padding-top: 10px;
+    .mobile_responsiveness>section>div {
         width: 70%;
-        height: 70%;    
-    }
-
-    .mobile_responsiveness > section > div > img{
-        width: 40%;
         height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 20px;
     }
 
-    .mobile_responsiveness > section > section{
-        margin-top: 25px;
+    .mobile_responsiveness>section>div>img {
         width: 20%;
-        height: 50%;
-        /* background-color: purple; */
+        height: 70%;
     }
-    .mobile_responsiveness > section > section >i{
-        font-size: 30px;
+
+    .mobile_responsiveness>section>section {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    
+    }
+
+    .mobile_responsiveness>section>section>i {
+        font-size: 34px;
+        
     }
 
     .mobile_responsiveness_bottom_navbar {
-        top: 25%;
+        top: 20%;
         position: absolute;
         height: 55vh;
-        width: 250px;
-        right: -10%;
+        width: 270px;
+        right: 0%;
         /* background-color: #007cd6; */
         background-color: white;
         visibility: hidden;
@@ -83,11 +100,12 @@
         z-index: 9999;
         padding: 10px;
     }
+
     .mobile_responsiveness_bottom_navbar.active {
         visibility: visible;
     }
 
-    .mobile_responsiveness_bottom_navbar > a{
+    .mobile_responsiveness_bottom_navbar>a {
         text-decoration: none;
         color: black;
         font-size: 20px;
@@ -100,60 +118,199 @@
         border-bottom: 1px solid #007cd6;
     }
 
-    .mobile_responsiveness_bottom_navbar > a:nth-last-child(1){
+    .mobile_responsiveness_bottom_navbar>a:nth-last-child(1) {
         border-bottom: none;
     }
 
     /* Style for the menu links */
-.menu-item {
-    position: relative;
-    display: inline-block;
-    color: #333; /* Set the text color */
-    text-decoration: none;
-    padding-left: 20px; /* Space for the arrow icon */
-    transition: color 0.3s ease;
+    .menu-item {
+        position: relative;
+        display: inline-block;
+        color: #333;
+        /* Set the text color */
+        text-decoration: none;
+        padding-left: 20px;
+        /* Space for the arrow icon */
+        transition: color 0.3s ease;
+    }
+
+    /* Style for the Font Awesome icon */
+    .menu-item i {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transform: translateX(-10px);
+        /* Position the icon off-screen to the left */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        /* Smooth transition for the icon */
+    }
+
+    /* On hover, reveal and slide in the icon */
+    .menu-item:hover {
+        color: #007cd6;
+    }
+
+    .menu-item:hover i {
+        opacity: 1;
+        transform: translateX(0);
+        /* Slide the icon into place */
+        color: #007cd6;
+    }
+
+    /* navbar section coding ends here */
+
+    /* Services Section Starts */
+    .services_section {
+        height: 70vh;
+        margin-bottom: 100px;
+        border-bottom: 1px solid gray !important;
+    }
+
+    .services_subsection_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services_subsection_content>section {
+        flex: 1;
+        width: 100%;
+    }
+
+    /* work done container starts */
+
+    .work_done_container {
+        padding-top: 0px !important;
+        /* background-color: orange; */
+        height: 185vh;
+        border-bottom: 1px solid gray;
+    }
+
+    .work_done_subcontainer_header {
+        height: 3vh;
+    }
+
+    .work_done_subcontainer_content {
+        height: 170vh;
+        display: block;
+        /* flex-direction: column;
+        gap: 30px;
+        width: 100%; */
+    }
+
+    .work_done_subcontainer_content_first {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .work_done_subcontainer_content_first>section {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: left;
+    }
+
+    .work_done_subcontainer_content_second {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .work_done_subcontainer_content_second>section {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: left;
+    }
+
+    /* contact_form_container section */
+    .contact_form_container {
+        height: 60vh;
+    }
+
+    .contact_form_subcontainer {
+        height: 100%;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .contact_form_subcontainer_header {
+        height: 13vh;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+    .contact_form_subcontainer_content {
+        /* background-color: purple; */
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact_form_subcontainer_content_first {
+        display: none;
+    }
+
+    .contact_form_subcontainer_content_second {
+        flex: 1;
+        width: 100%;
+    }
+
+    .subcontainer_content>div {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    /* Faqs section coding here */
+
+    .faqs_section {
+        height: 50vh;
+    }
+
+    .contact_form_subcontainer_header {
+        height: 10vh;
+        display: flex;
+        justify-content: left;
+        align-items: end;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+    .subcontainer_content {
+        height: 37vh;
+    }
+
+    /* footer section starts */
+    .footer_section {
+        margin-top: 0px;
+        height: 60vh;
+        background-color: #27232d;
+    }
+
 }
 
-/* Style for the Font Awesome icon */
-.menu-item i {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transform: translateX(-10px); /* Position the icon off-screen to the left */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for the icon */
-}
-
-/* On hover, reveal and slide in the icon */
-.menu-item:hover {
-    color: #007cd6;
-}
-
-.menu-item:hover i {
-    opacity: 1;
-    transform: translateX(0); /* Slide the icon into place */
-    color: #007cd6;
-}
-
-
-
-
-  }
-  
 
 
 /* Styles for small mobile devices like iPhone SE */
-  /* @media (max-width: 375px) {
+/* @media (max-width: 375px) {
     
   } */
-  
-  /* Styles for larger small mobile devices */
-  /* @media (max-width: 480px) {
+
+/* Styles for larger small mobile devices */
+/* @media (max-width: 480px) {
     
   } */
-  
-  /* Styles for medium mobile devices, like tablets in portrait mode */
-  /* @media (max-width: 768px) {
+
+/* Styles for medium mobile devices, like tablets in portrait mode */
+/* @media (max-width: 768px) {
     
   }  */
-  
-  
