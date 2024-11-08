@@ -12,7 +12,7 @@
 }
 
 /* Styles for very small mobile devices */
-@media (max-width: 480px){
+@media (max-width: 540px){
     
     body{
         padding: 0px;
