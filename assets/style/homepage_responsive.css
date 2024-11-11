@@ -13,7 +13,12 @@
 
 /* Styles for very small mobile devices */
 @media (max-width: 768px) {
-
+    * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden !important;
+    }
     body {
         padding: 0px;
         margin: 0px;
