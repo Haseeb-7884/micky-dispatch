@@ -17,7 +17,7 @@
     body {
         padding: 0px;
         margin: 0px;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
 
     /* Hero section coding starts */
