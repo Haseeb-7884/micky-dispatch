@@ -161,8 +161,7 @@
 
     /* Services Section Starts */
     .services_section {
-        height: 70vh;
-        margin-bottom: 100px;
+        height: 90vh;
         border-bottom: 1px solid gray !important;
     }
 
@@ -179,22 +178,21 @@
     /* work done container starts */
 
     .work_done_container {
-        padding-top: 0px !important;
-        /* background-color: orange; */
-        height: 185vh;
+
+        height: 195vh;
+        box-sizing: border-box !important;
         border-bottom: 1px solid gray;
+        padding-bottom: 50px !important;
     }
 
     .work_done_subcontainer_header {
-        height: 3vh;
+        height: 10vh;
     }
 
     .work_done_subcontainer_content {
         height: 170vh;
         display: block;
-        /* flex-direction: column;
-        gap: 30px;
-        width: 100%; */
+
     }
 
     .work_done_subcontainer_content_first {
@@ -232,7 +230,7 @@
 
     /* contact_form_container section */
     .contact_form_container {
-        height: 80vh;
+        height: 105vh;
     }
 
     .contact_form_subcontainer {
@@ -243,8 +241,11 @@
 
     .contact_form_subcontainer_header {
         height: 13vh;
+        display: flex;
+        justify-content: left;
+        align-items: end;
         width: 100%;
-        /* background-color: yellow; */
+        padding-top: 20px;
     }
 
     .contact_form_subcontainer_content {
@@ -255,6 +256,10 @@
         flex-direction: column;
         gap: 10px;
     }
+
+    /* .contact_form_subcontainer_header {
+    
+    } */
 
     .contact_form_subcontainer_content_first {
         display: none;
@@ -273,7 +278,6 @@
     .contact_form_subcontainer_content_second>form {
         height: 60vh;
         width: 100%;
-        /* background-color: cyan; */
         margin-top: 10px;
         padding: 20px;
     }
@@ -281,12 +285,10 @@
     .contact_form_subcontainer_content_second>form>section {
         width: 100%;
         height: 70px;
-        /* background-color: white; */
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
-
 
     .first_div {
         width: 100%;
@@ -294,47 +296,138 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
-        /* background-color: orange; */
     }
-    .first_div > section{
+
+    .first_div>section {
         flex: 1;
         width: 100%;
     }
-    .first_div_input{
+
+    .first_div_input {
         height: 40px !important;
     }
 
+    .mobile_responsive_contact_container {
+        display: block;
+        margin-top: 60px !important;
+    }
 
-    /* .contact_form_subcontainer_content_second>form>div > section:nth-child(1){
-        margin-top: 0px;
-        margin-bottom: 110px;
-        background-color: orange;
-    } */
+    .form_submit_btn {
+        margin-left: 30%;
+        margin-top: 4%;
+    }
 
     /* Faqs section coding here */
 
     .faqs_section {
-        height: 50vh;
+        height: 78vh;
+        /* background-color: orange; */
     }
 
-    .contact_form_subcontainer_header {
-        height: 10vh;
-        display: flex;
-        justify-content: left;
-        align-items: end;
-        width: 100%;
-        /* background-color: yellow; */
-    }
 
     .subcontainer_content {
-        height: 37vh;
+        height: 60vh;
+        overflow-x: hidden;
+        background-color: antiquewhite;
     }
+
 
     /* footer section starts */
     .footer_section {
         margin-top: 0px;
-        height: 60vh;
+        height: 150vh;
         background-color: #27232d;
+    }
+
+    .footer_subsection {
+        background-color: #27232d;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .footer_subsection_first {
+        background-color: #27232d;
+        height: 30%;
+        width: 100%;
+        color: white;
+    }
+
+    .footer_subsection_first>div {
+        height: 120px;
+        width: 180px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 140px;
+    }
+
+    .footer_subsection_second {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        background-color: purple;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer_subsection_second_one {
+        background-color: violet;
+
+        padding: 0px !important;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .footer_subsection_second_one>h5 {
+        margin-left: 30px;
+    }
+
+    .footer_subsection_second_one>ul {
+        width: 100%;
+        height: 100%;
+        margin-left: 30px;
+    }
+
+    .footer_subsection_second_two {
+        /* background-color: cyan; */
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer_subsection_second_two>h5{
+        /* background-color: #27232d; */
+        margin-left: 0px;
+        
+    }
+    
+
+    .footer_subsection_second_two>ul {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+
+    .footer_subsection_second_three {
+        display: none;
+    }
+
+    .footer_mobile_responsiveness {
+        display: block;
+    }
+
+    .footer_subsection_third {
+        height: 40vh;
+        background-color: cyan;
+
     }
 
 }
