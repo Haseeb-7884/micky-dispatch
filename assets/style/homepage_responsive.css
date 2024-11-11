@@ -23,6 +23,7 @@
     /* Hero section coding starts */
     .hero_section {
         height: 45vh;
+        overflow-x: hidden !important;
     }
 
     /* header style */
@@ -44,7 +45,7 @@
         display: block;
         width: 100%;
         /* background-color: orange; */
-        width: 120% !important;
+        width: 100% !important;
         overflow: hidden;
         height: 12vh;
     }
@@ -163,6 +164,7 @@
     .services_section {
         height: 90vh;
         border-bottom: 1px solid gray !important;
+        overflow-x: hidden !important;
     }
 
     .services_subsection_content {
