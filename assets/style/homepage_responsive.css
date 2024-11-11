@@ -416,7 +416,7 @@
         margin-left: 0px;
         margin-bottom: 0px;
         margin-top: 20px;
-        font-size: 22px;
+        font-size: 20px;
     }
     
 
@@ -453,20 +453,25 @@
     }
 
     .footer_subsection_third {
-        height: 8vh;
-        margin-bottom: 20px;
-        background-color: cyan;
+        height: 3vh;
+        padding-bottom: 20px;
+        background-color: #27232d;
     }
-
+    
     .inside_subcontainer_third{
-        font-weight: bold;
         height: 100%;
         margin: 0 auto;
         width: 30%;
-        background-color: orange;
+        background-color: #27232d;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+    }
+    .inside_subcontainer_third > a{
+        color:whitesmoke;
+        font-size: 25px;
+        font-weight: bold;
     }
 
    
