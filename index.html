@@ -190,33 +190,32 @@
                         via phone: <strong>+92 305 111 9563</strong> or email:
                         <strong>dispatchcentralhub@gmail.com</strong>
                     </p>
-                    <form action="">
+                    <form id="myForm" method="POST">
 
 
                         <section>
                             <label for="name">Your Name <span style="color:red; font-weight: bolder;">*</span> </label>
-                            <input class="form-label-lg" required id="name" type="text"
+                            <input class="form-label-lg" required name="name" id="name" type="text"
                                 placeholder="Enter Your Full Name">
                         </section>
 
                         <section class="mt-4">
                             <label for="name">Enter MC (optional) </label>
-                            <input class="form-label-lg" id="name" type="number"
-                                placeholder="Enter MC">
+                            <input class="form-label-lg" id="mc" name="mc" type="number" placeholder="Enter MC">
                         </section>
 
 
                         <div class="first_div">
                             <section>
                                 <label for="email">Email <span style="color:red; font-weight: bolder;">*</span> </label>
-                                <input class="form-label first_div_input" required id="email" type="email"
+                                <input class="form-label first_div_input" required id="email" name="email" type="email"
                                     placeholder="Enter Your Email Address">
                             </section>
                             <section>
                                 <label for="number">Wattsapp <span style="color:red; font-weight: bolder;">*</span>
                                 </label>
-                                <input class="form-label first_div_input" required id="number" type="number"
-                                    placeholder="Enter Your Wattsapp Number">
+                                <input class="form-label first_div_input" required name="number" id="number"
+                                    type="number" placeholder="Enter Your Wattsapp Number">
                             </section>
                         </div>
 
@@ -224,30 +223,35 @@
                             <section>
                                 <label for="email">Truck Type <span style="color:red; font-weight: bolder;">*</span>
                                 </label>
-                                <select class="form-select" required>
+                                <select name="truck_type" class="form-select" required>
                                     <option class="bg-light" disabled selected>Select from the given below</option>
-                                    <option class="bg-light" value="">Dry Van</option>
-                                    <option class="bg-light" value="">Step Desk</option>
-                                    <option class="bg-light" value="">Reefer</option>
-                                    <option class="bg-light" value="">Box Truck</option>
-                                    <option class="bg-light" value="">Van</option>
-                                    <option class="bg-light" value="">Power Only</option>
-                                    <option class="bg-light" value="">Owner Operator</option>
-                                    <option class="bg-light" value="">Hotshot</option>
-                                    <option class="bg-light" value="">Straight Truck</option>
+                                    <option class="bg-light" value="Dry Van">Dry Van</option>
+                                    <option class="bg-light" value="Step Desk">Step Desk</option>
+                                    <option class="bg-light" value="Reefer">Reefer</option>
+                                    <option class="bg-light" value="Box Truck">Box Truck</option>
+                                    <option class="bg-light" value="Van">Van</option>
+                                    <option class="bg-light" value="Power Only">Power Only</option>
+                                    <option class="bg-light" value="Owner Operator">Owner Operator</option>
+                                    <option class="bg-light" value="Hotshot">Hotshot</option>
+                                    <option class="bg-light" value="Straight Truck">Straight Truck</option>
                                 </select>
                             </section>
                             <section>
                                 <label for="number">Authority Age <span style="color:red; font-weight: bolder;">*</span>
                                 </label>
-                                <select class="form-select" required>
+                                <select name="authority_age" class="form-select" required>
                                     <option class="bg-light" disabled selected>Select Age of MC Authority</option>
-                                    <option class="bg-light" value="">Under 90 days(Limited Company)</option>
-                                    <option class="bg-light" value="">Under 6 Months</option>
-                                    <option class="bg-light" value="">Over 6 Months</option>
+                                    <option class="bg-light" value="Under 90 days(Limited Company)">Under 90
+                                        days(Limited Company)</option>
+                                    <option class="bg-light" value="Under 6 Months">Under 6 Months</option>
+                                    <option class="bg-light" value="Over 6 Months">Over 6 Months</option>
                                 </select>
                             </section>
                         </div>
+
+                        <!-- Hidden fields for date and time -->
+                        <input type="hidden" name="submission_date" id="submission_date">
+                        <input type="hidden" name="submission_time" id="submission_time">
 
                         <input type="submit" class="btn form_submit_btn" value="Submit Application">
                     </form>
@@ -445,8 +449,8 @@
                     </ul>
                 </div>
                 <div class="footer_subsection_second_two">
-                    <h5 > <span>Disp</span>atch Services</h5>
-                    
+                    <h5> <span>Disp</span>atch Services</h5>
+
                     <ul>
                         <li>Box Truck</li>
                         <li>Straight Truck</li>
@@ -456,7 +460,8 @@
                     </ul>
                 </div>
                 <div class="footer_subsection_second_three">
-                    <a target="_blank" href="https://www.linkedin.com/in/mickey-dispatch-711767337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <a target="_blank"
+                        href="https://www.linkedin.com/in/mickey-dispatch-711767337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                         <i class="fa-brands fa-linkedin"></i>
                         <p>linkedIn</p>
                     </a>
@@ -479,13 +484,21 @@
     <div class="footer_mobile_responsiveness">
         <div class="footer_subsection_third">
             <div class="inside_subcontainer_third">
-                <a targer="_blank" href="https://www.facebook.com/tina.batista.068?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-                <a targer="_blank" href="https://x.com/HasnainMal79510?t=vGJ963e5FDV-_txQZvu_VQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
-                <a targer="_blank" href="https://www.linkedin.com/in/mickey-dispatch-711767337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a targer="_blank" href="https://www.facebook.com/tina.batista.068?mibextid=ZbWKwL"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a targer="_blank" href="https://x.com/HasnainMal79510?t=vGJ963e5FDV-_txQZvu_VQ&s=09"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a targer="_blank"
+                    href="https://www.linkedin.com/in/mickey-dispatch-711767337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </div>
     <!-- footer section ends here  -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+
+    <script src="assets/script/email_template.js"></script>
 
     <script>
         document.getElementById('hamburger-icon').addEventListener('click', function () {
@@ -494,6 +507,8 @@
         });
 
     </script>
+
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
